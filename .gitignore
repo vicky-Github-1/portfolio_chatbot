@@ -1,0 +1,5 @@
+backend/data/profile.js
+backend/.gitignore
+backend/.env
+chatbot/node_modules/
+
