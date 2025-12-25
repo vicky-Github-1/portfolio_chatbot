@@ -1,0 +1,145 @@
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.chat-container {
+  width: 360px;
+  height: 520px;
+  max-width: 100%;
+  max-height: 90dvh;
+
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  font-family: "Segoe UI", sans-serif;
+
+  border: 1px solid #e5e7eb;
+}
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+.chat-header {
+  background: #0952c0;
+  color: #ffffff;
+  padding: 12px;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  font-family: 'Roboto', system-ui;
+  flex-shrink: 0;
+}
+
+/* ============================= */
+/* CHAT BODY */
+/* ============================= */
+.chat-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  padding: 12px;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+  background: #ffffff;
+}
+
+.chat-body::-webkit-scrollbar {
+  display: none;
+}
+.chat-body {
+  scrollbar-width: none;
+}
+
+/* ============================= */
+/* MESSAGE BUBBLES */
+/* ============================= */
+.bubble {
+  max-width: 75%;
+  padding: 9px 13px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+
+  font-size: 14px;
+  line-height: 1.45;
+
+  word-break: break-word;
+  white-space: pre-wrap;
+}
+
+/* USER MESSAGE */
+.bubble.user {
+  background: #0952c0;
+  color: #ffffff;
+  margin-left: auto;
+  border-bottom-right-radius: 4px;
+}
+
+/* BOT MESSAGE */
+.bubble.bot {
+  background: #f1f5f9;
+  color: #1e293b;
+  margin-right: auto;
+  border-bottom-left-radius: 4px;
+}
+
+/* typing */
+.bubble.typing {
+  color: #64748b;
+  font-size: 13px;
+}
+
+/* ============================= */
+/* INPUT AREA */
+/* ============================= */
+.chat-input {
+  background: #f8fafc;
+  padding: 10px;
+
+  border-top: 1px solid #e5e7eb;
+  flex-shrink: 0;
+}
+
+/* input */
+.chat-textbox {
+  background: #ffffff !important;
+  color: #1e293b !important;
+  border: 1px solid #cbd5e1 !important;
+  border-radius: 20px;
+}
+
+.chat-textbox::placeholder {
+  color: #94a3b8;
+}
+
+/* send button */
+.send-btn {
+  width: 42px;
+  height: 42px;
+  background: #0952c0!important;
+  border: none !important;
+  color: #ffffff !important;
+}
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+@media (max-width: 480px) {
+  .chat-container {
+    width: 92vw;
+    max-height: 90dvh;
+    border-radius: 16px;
+  }
+
+  .bubble {
+    max-width: 85%;
+    font-size: 13px;
+  }
+
+  .chat-header {
+    font-size: 14px;
+  }
+}
