@@ -43,7 +43,7 @@ AI Integration: Groq LLM API
 
 Clone the repository:
 
-git clone https://github.com/your-username/portfolio-chatbot.git
+git clone https://github.com/vicky-Github-1/portfolio-chatbot.git
 
 Go to the project folder:
 
